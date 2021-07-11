@@ -20,9 +20,12 @@ const addIngridient = ingredients => {
   return ingredients.map(ingridient => { 
     const element = document.createElement('li');
     element.textContent = ingridient;
-    ingredientsEl.append(element);
+    return element;
   });
 
 };
 
-addIngridient(ingredients);
+const element = addIngridient(ingredients);
+
+
+ ingredientsEl.append(...element);

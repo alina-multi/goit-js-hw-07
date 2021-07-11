@@ -21,9 +21,7 @@ console.log(`Всего на странице ${numberCategory} категори
 const getNameCategory = categories => { 
     return categories.forEach(element => {
         const nameCategory = element.firstElementChild.textContent;
-        //  console.log(nameCategory);
         const numberInCategoryEl = element.querySelectorAll('li').length;
-        //  console.log(numberInCategoryEl);
         console.log(`Категория: ${nameCategory}. Количество элементов: ${numberInCategoryEl} `);
 });
 };
