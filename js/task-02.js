@@ -28,4 +28,7 @@ const addIngridient = ingredients => {
 const element = addIngridient(ingredients);
 
 
- ingredientsEl.append(...element);
+ingredientsEl.append(...element);
+ 
+
+
