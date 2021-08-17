@@ -9,7 +9,7 @@
 const rangeEl = document.querySelector("#font-size-control");
 const spanEl = document.querySelector("#text");
 
-
+rangeEl.value = 50;
 rangeEl.addEventListener('input', (event) => spanEl.style.fontSize = event.currentTarget.value + "px");
 
 
